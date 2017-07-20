@@ -20,14 +20,16 @@ description: > # this means to ignore newlines until "baseurl:"
   This is the personal portfolio site of the creative stylings by Lina Johansson
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: linalingonberry
-github_username:  kemjohansson
-instagram: lingonberry
-linkedin: johanssonlina
+
+# Social settings
+instagram_url: https://instagram.com/lingonberry
+linkedin_url: https://www.linkedin.com/in/johanssonlina/
+twitter_url: https://twitter.com/linalingonberry
+behance_url:
+github_url: https://github.com/kemjohansson
 
 # Build settings
 markdown: kramdown
-theme: minima
 gems:
   - jekyll-feed
 exclude:

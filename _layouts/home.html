@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+	<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+	<script src="https://use.fontawesome.com/af8521811f.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="dreamhost.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+</head>
+
+<header class="intro">
+	<nav>
+		<a href="/blog.html">Blog</a>
+		<a href="/about.html">About</a>
+		<a href="/assets/Lina.Johansson.pdf">Resume</a>
+	</nav>
+	<div class="w-80 mt7 pl7">
+	<h1 class="light"> My name is Lina</h1>
+	<h2> Senior Visual Designer // Digital Nomad // Dreamer </h2>
+		<a class="f6 link dim ba bw1 ph3 pv2 mb2 dib light mt4" href="#portfolio">VIEW PORTFOLIO</a>
+	</div>
+</header>
+
+<body>
+
+<section class="about center w-80 pa2 mt6">
+	<h1>Introduction</h1>
+	<div class="fl w-third pa2">
+	<img src="/assets/images/Lina.png">
+	</div>
+	<div class="fl w-two-thirds pa2">
+	<p>Hello! What you see here is an idealistic battle-tested Senior Visual Designer, who occasionally geeks out over the intersection of great design and technology. Secretly can’t wait until we can start to design Starships. Left-handed but in my right (brained) creative mind. I like to build, tinker, iterate and make beautiful things. I am a dreamer and a doer.</p>
+	<ul class="list dib">
+		<li><a href="{{ site.github_url }}" class="fa fa-github link dim gray dib h2 w2 br-100 mr3" target="_blank"></a></li>
+		<li><a href="{{ site.behance_url }}" class="fa fa-behance link dim gray dib h2 w2 br-100 mr3" target="_blank"></a></li>
+		<li><a href="{{ site.linkedin_url }}" class="fa fa-linkedin link dim gray dib h2 w2 br-100 mr3" target="_blank"></a></li>
+		<li><a href="{{ site.twitter_url }}" class="fa fa-twitter link dim gray dib h2 w2 br-100 mr3" target="_blank"></a></li>
+		<li><a href="{{ site.instagram_url }}" class="fa fa-instagram link dim gray dib h2 w2 br-100 mr3" target="_blank"></a></li>
+	</ul>
+	</div>
+	<div class="clearfix"></div>
+</section>
+
+<section id="portfolio" class="casestudies center w-80 pa2 mt6">
+	<h1>Casestudies</h1>
+</section>
+
+<section class="projects center w-80 pa2 mt6">
+	<h1>Projects</h1>
+</section>
+
+<section class="skills center w-80 pa2 mt6">
+	<h1>Skills</h1>
+</section>
+
+<section class="contact center w-80 pa2 mt6">
+	<h1>Contact</h1>
+	<div>
+	<form method="POST" action="//formspree.io/{{ site.email }}">
+		<fieldset class="contact-info-group">
+
+	<label><span>Your Name</span>
+	<input type="text" name="name"></label>
+
+	<label><span>Your Email</span>
+	<input type="email" name="_replyto"></label>
+
+	</fieldset>
+
+	<label><span>Tell me about your project</span>
+	<textarea name="message"></textarea></label>
+
+	<fieldset class="submit-wrap">
+	<input type="submit" value="Send">
+	</fieldset>
+	</form>
+	</div>
+	<div>
+	<p>lina@lingonberrys.com</p>
+	<p>Los Angeles, CA <br> Göteborg, Sweden</p>
+	</div>
+	<ul class="list">
+		<li><a href="{{ site.github_url }}" class="fa fa-twitter" target="_blank">GitHub</a></li>
+		<li><a href="{{ site.behance_url }}" class="fa fa-twitter" target="_blank">Behance</a></li>
+		<li><a href="{{ site.linkedin_url }}" class="fa fa-twitter" target="_blank">LinkedIn</a></li>
+		<li><a href="{{ site.twitter_url }}" class="fa fa-twitter" target="_blank">Twitter</a></li>
+		<li><a href="{{ site.instagram_url }}" class="fa fa-twitter" target="_blank">Instagram</a></li>
+	</ul>
+</section>
+
+</body>
+
+<footer>
+<p>All rights reserved. Copyright &copy; 2017</p>
+</footer>
+</html>
